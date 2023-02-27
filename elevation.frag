@@ -12,11 +12,11 @@ uniform sampler2D u_buffer0;
 uniform sampler2D u_buffer1;
 
 
-#include "shader_prototyping_2022/lygia/filter/edge.glsl"
-#include "shader_prototyping_2022/lygia/filter/radialBlur.glsl"
-#include "shader_prototyping_2022/lygia/generative/snoise.glsl"
-#include "shader_prototyping_2022/lygia/generative/srandom.glsl"
-#include "shader_prototyping_2022/lygia/math/rotate2d.glsl"
+#include "./lygia/filter/edge.glsl"
+#include "./lygia/filter/radialBlur.glsl"
+#include "./lygia/generative/snoise.glsl"
+#include "./lygia/generative/srandom.glsl"
+#include "./lygia/math/rotate2d.glsl"
 
 float octaveSNoise(vec3 a, int o) {
     float noise = 0.;
